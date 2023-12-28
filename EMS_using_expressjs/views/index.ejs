@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .btn{
+      background-color: blueviolet;
+      color: whitesmoke;
+      border-radius: 3px;
+    }
+    html{
+   background-color: azure;
+    }
+  </style>
+</head>
+<body>
+  <header>Employee Management System</header>
+  <form action="/employees/employee">
+    <button type="submit" name="btn" id="btn" value="add">Add Employee</button>
+    </form>
+     <table border="2">
+      <thead>
+        <tr>
+          <th>Employee id</th>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>Dept Name</th>
+          <th></th>
+          </tr>
+      </thead>
+      <tbody>
+        
+          <%for(var i=0;i<empdata.length;i++)
+          {%>
+            <tr>
+            <td><%=empdata[i].empId%></td>
+            <td><%=empdata[i].name%></td>
+            <td><%=empdata[i].salary%></td>
+            <td><%=empdata[i].deptName%></td>
+            <td><a href="/employees/employee/<%=empdata[i].empId%>"><button type="button" class="btn">delete</button></a>|<a href="/employees/edit/<%=empdata[i].empId%>"><button type="button" class="btn">Edit</button></a></td>
+        </tr>
+        <%}%>
+        </tbody>
+      </table>
+</body>
+</html>
