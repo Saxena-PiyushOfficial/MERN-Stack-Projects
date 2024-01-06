@@ -1,0 +1,14 @@
+/* AccountTable.css */
+
+.table1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.table1 th, .table1 td {
+  border: 1px solid #ddd;
+  
+  text-align: left;
+}
