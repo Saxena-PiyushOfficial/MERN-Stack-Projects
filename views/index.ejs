@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h6>Product manegement System<h6>
+    <form action="/displayproducts">
+      <button type="submit" name="btn" id="btn" value="add">add new prodct</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+             <th>Product id</th>
+             <th>Product name</th>
+             <th>Product qty</th>
+             <th>Product price</th>
+             <th>action</th>
+          </tr>
+          </thead>
+          <tbody>
+              <%for(var i=0;i<proddata.length;i++){%>
+                <tr></tr>
+
+
+              </td>
+            </tr>
+            </tbody>
+      </table>
+</body>
+</html>
